@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Multiplicación de Matrices</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-5">Multiplicación de Matrices</h1>
+
+    <div class="row mt-5">
+        <div class="col">
+            <h2>Matriz A</h2>
+            <div class="mb-3">
+                <label for="rowsA" class="form-label">Filas:</label>
+                <input type="number" class="form-control" id="rowsA">
+            </div>
+            <div class="mb-3">
+                <label for="colsA" class="form-label">Columnas:</label>
+                <input type="number" class="form-control" id="colsA">
+            </div>
+            <h3>Valores de la Matriz A:</h3>
+            <div id="matrixA"></div>
+        </div>
+
+        <div class="col">
+            <h2>Matriz B</h2>
+            <div class="mb-3">
+                <label for="rowsB" class="form-label">Filas:</label>
+                <input type="number" class="form-control" id="rowsB">
+            </div>
+            <div class="mb-3">
+                <label for="colsB" class="form-label">Columnas:</label>
+                <input type="number" class="form-control" id="colsB">
+            </div>
+            <h3>Valores de la Matriz B:</h3>
+            <div id="matrixB"></div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary mt-3" onclick="multiplicarMatrices()">Multiplicar</button>
+
+    <div class="mt-5">
+        <h2>Resultado</h2>
+        <div id="resultado"></div>
+    </div>
+</div>
+
+<!-- Bootstrap Bundle JS (Bootstrap JS + Popper.js) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
